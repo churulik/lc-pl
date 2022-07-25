@@ -12,8 +12,8 @@ services:
       - "7882:7882/udp"
     volumes:
       - ./livekit.yaml:/livekit.yaml
-  node:
-    container_name: node
+  api:
+    container_name: api
     image: tushe2000/lc-api
     restart: unless-stopped
     ports:
