@@ -16,6 +16,8 @@ services:
     container_name: api
     image: tushe2000/lc-api
     restart: unless-stopped
+    env_file:
+      - .env
     ports:
       - "5000:5000"
   ui:
